@@ -10,6 +10,7 @@ const output= server.createServer((req, res)=>{
     
     
 });
-output.listen(5000,()=>{
+const PORT = process.env.PORT || 5000;
+output.listen(PORT,()=>{
     console.log('Server running...');
 }) ;
